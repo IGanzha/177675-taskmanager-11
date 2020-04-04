@@ -13,4 +13,4 @@ const createSiteMenuTemplate = () => {
   );
 };
 
-export { createSiteMenuTemplate };
+export {createSiteMenuTemplate};

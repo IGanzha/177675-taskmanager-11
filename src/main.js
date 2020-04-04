@@ -1,9 +1,9 @@
-import { createBoardTemplate } from './components/board.js';
-import { createFilterTemplate } from './components/filter.js';
-import { createLoadMoreBtnTemplate } from './components/loadMoreButton.js';
-import { createTaskEditTemplate } from './components/newTask.js';
-import { createSiteMenuTemplate } from './components/siteMenu.js';
-import { createTaskTemplate } from './components/task.js';
+import {createBoardTemplate} from './components/board.js';
+import {createFilterTemplate} from './components/filter.js';
+import {createLoadMoreBtnTemplate} from './components/loadMoreButton.js';
+import {createTaskEditTemplate} from './components/newTask.js';
+import {createSiteMenuTemplate} from './components/siteMenu.js';
+import {createTaskTemplate} from './components/task.js';
 
 
 const render = (container, template, place = `beforeend`) => {
