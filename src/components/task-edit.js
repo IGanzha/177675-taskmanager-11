@@ -20,7 +20,7 @@ const createColorsMarkup = (colors, currentColor) => {
         >`
       );
     })
-    .join(`\n`);
+    .join(``);
 };
 
 const createRepeatingDaysMarkup = (days, repeatingDays) => {
@@ -28,20 +28,11 @@ const createRepeatingDaysMarkup = (days, repeatingDays) => {
     .map((day, index) => {
       const isChecked = repeatingDays[day];
       return (
-        `<input
-          class="visually-hidden card__repeat-day-input"
-          type="checkbox"
-          id="repeat-${day}-${index}"
-          name="repeat"
-          value="${day}"
-          ${isChecked ? `checked` : ``}
-        />
-        <label class="card__repeat-day" for="repeat-${day}-${index}"
-          >${day}</label
-        >`
+        `<input class="visually-hidden card__repeat-day-input" type="checkbox" id="repeat-${day}-${index}" name="repeat" value="${day}" ${isChecked ? `checked` : ``}/>
+        <label class="card__repeat-day" for="repeat-${day}-${index}">${day}</label>`
       );
     })
-    .join(`\n`);
+    .join(``);
 };
 
 export const createTaskEditTemplate = (task) => {
